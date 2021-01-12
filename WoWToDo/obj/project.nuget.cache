@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vIj/DcU7HEIjTiUic4ZuQDD4yBKwSrCnFhJukfWQsDa1vKf1GpsHMwOSfIEFZmsYQWszFc6EOnhFADYcdLE0Ww==",
+  "success": true,
+  "projectFilePath": "F:\\Program\\WoW Tutorial\\WoWToDo\\WoWToDo\\WoWToDo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SkylerK\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
