@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace WoWToDo.Model
 {
-    public class Book
+    public class Tasks
     {
         [Key]
         public int Id { get; set; }
 
         [Required]
         public string Name { get; set; }
-        public string Author { get; set; }
+        public string Location { get; set; }
+        public string Time { get; set; }
     }
 }

@@ -4,11 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using WoWToDo.Model;
 
 namespace WoWToDo.Pages.BookList
 {
-    public class IndexModel : PageModel
+    public class CreateModel : PageModel
     {
+        private readonly ApplicationDbContext _db;
+
+        public CreateModel(ApplicationDbContext db)
+        {
+            _db = db;
+        }
+
+        public Tasks Tasks { get; set; }
         public void OnGet()
         {
 

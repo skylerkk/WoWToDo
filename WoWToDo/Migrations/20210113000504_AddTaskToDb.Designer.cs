@@ -9,8 +9,8 @@ using WoWToDo.Model;
 namespace WoWToDo.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210112225914_AddBooToDb")]
-    partial class AddBooToDb
+    [Migration("20210113000504_AddTaskToDb")]
+    partial class AddTaskToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,23 +20,26 @@ namespace WoWToDo.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("WoWToDo.Model.Book", b =>
+            modelBuilder.Entity("WoWToDo.Model.Tasks", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Author")
+                    b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Time")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Book");
+                    b.ToTable("Tasks");
                 });
 #pragma warning restore 612, 618
         }

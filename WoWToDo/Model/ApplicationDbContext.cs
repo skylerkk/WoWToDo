@@ -13,6 +13,6 @@ namespace WoWToDo.Model
 
         }
 
-        public DbSet<Book> Book { get; set; }
+        public DbSet<Tasks> Tasks { get; set; }
     }
 }
