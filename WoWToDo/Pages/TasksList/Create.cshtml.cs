@@ -16,11 +16,25 @@ namespace WoWToDo.Pages.BookList
         {
             _db = db;
         }
-
+        [BindProperty]
         public Tasks Tasks { get; set; }
         public void OnGet()
         {
 
+        }
+
+        public async Task<IActionResult> OnPost()
+        {
+            if (ModelState.IsValid)
+            {
+                await _db.Tasks.AddAsync(Tasks);
+                await _db.SaveChangesAsync();
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }

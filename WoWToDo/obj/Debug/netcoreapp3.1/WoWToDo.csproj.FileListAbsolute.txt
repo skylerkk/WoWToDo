@@ -413,3 +413,4 @@ F:\Program\WoW Tutorial\WoWToDo\WoWToDo\obj\Debug\netcoreapp3.1\WoWToDo.MvcAppli
 F:\Program\WoW Tutorial\WoWToDo\WoWToDo\obj\Debug\netcoreapp3.1\WoWToDo.MvcApplicationPartsAssemblyInfo.cache
 F:\Program\WoW Tutorial\WoWToDo\WoWToDo\obj\Debug\netcoreapp3.1\Razor\Pages\TasksList\Create.cshtml.g.cs
 F:\Program\WoW Tutorial\WoWToDo\WoWToDo\obj\Debug\netcoreapp3.1\Razor\Pages\TasksList\Index.cshtml.g.cs
+F:\Program\WoW Tutorial\WoWToDo\WoWToDo\obj\Debug\netcoreapp3.1\Razor\Pages\TasksList\Edit.cshtml.g.cs
