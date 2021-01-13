@@ -23,5 +23,10 @@ namespace WoWToDo.Pages.TasksList
         {
             Tasks = await _db.Tasks.ToListAsync();
         }
+        
+        public async Task<IActionResult> OnPostDelete(int id)
+        {
+
+        }
     }
 }
